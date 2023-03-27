@@ -57,7 +57,6 @@
     import PocketBase from 'pocketbase';
 
     const PBClient = new PocketBase(import.meta.env.VITE_POCKETBASE_URL);
-    console.log(import.meta.env.VITE_POCKETBASE_URL)
 
     export default {
         data(){
@@ -75,12 +74,11 @@
                         this.email, 
                         this.password
                     );
-                    console.log(userData)
                     if (userData){
                         this.$store.commit('setUserData', {
                             userId: userData.record.id,
-                            username: userData.record.name,
-                            userProfileId: userData.record.username,
+                            name: userData.record.name,
+                            username: userData.record.username,
                         });
                         this.$router.push({ path: '/' });
                     } else {

@@ -5,21 +5,21 @@ import Cookies from 'js-cookie'
 export default createStore({
   state: () => ({
     userId: '',
+    name: '',
     username: '',
-    userProfileId: '',
   }),
   getters: {
   },
   mutations: {
     clear(state) {
       state.userId = '';
+      state.name = '';
       state.username = '';
-      state.userProfileId = '';
     },
     setUserData(state, userData){
       state.userId = userData.userId;
+      state.name = userData.name;
       state.username = userData.username;
-      state.userProfileId = userData.userProfileId;
     }
   },
   actions: {
