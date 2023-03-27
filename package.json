@@ -9,7 +9,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.47"
+    "dotenv": "^16.0.3",
+    "js-cookie": "^3.0.1",
+    "pocketbase": "^0.13.1",
+    "vue": "^3.2.47",
+    "vue-router": "^4.1.6",
+    "vuex": "^4.1.0",
+    "vuex-persistedstate": "^4.1.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",
