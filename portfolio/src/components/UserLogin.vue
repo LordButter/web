@@ -71,7 +71,7 @@
                             name: userData.record.name,
                             username: userData.record.username,
                         });
-                        this.$router.push({ path: '/' });
+                        this.$router.push({ path: '/portfolio' });
                     } else {
                         this.passwordInvalid = true;
                         console.log("User konnte nicht Auth werden.");

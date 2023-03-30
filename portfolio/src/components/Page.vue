@@ -6,7 +6,7 @@
 
 <template>
     <div class="absolute w-full h-full bg-gray-900"
-        style="background-image: url('/boxed-bg-dark.png');">
+        style="background-image: url('/portfolio/boxed-bg-dark.png');">
         <Header/>
         <Base>
             <slot></slot>

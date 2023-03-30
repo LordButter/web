@@ -3,12 +3,12 @@
     import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
     const navigation = [
-        { name: 'Dashboard', href: '/' },
-        { name: 'Resume', href: '/resume' },
-        { name: 'Application', href: '/application' },
-        { name: 'Skills', href: '/skills' },
-        { name: 'Projects', href: '/projects' },
-        { name: 'About', href: '/about' },
+        { name: 'Dashboard', href: '/portfolio' },
+        { name: 'Resume', href: '/portfolio/resume' },
+        { name: 'Application', href: '/portfolio/application' },
+        { name: 'Skills', href: '/portfolio/skills' },
+        { name: 'Projects', href: '/portfolio/projects' },
+        { name: 'About', href: '/portfolio/about' },
     ]
 </script>
 
@@ -31,10 +31,10 @@
                 <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                     <div class="flex flex-shrink-0 items-center">
                         <img class="block h-8 w-auto lg:hidden" 
-                            src="/terminal-icon.png" 
+                            src="/portfolio/terminal-icon.png" 
                             alt="Your Company" />
                         <img class="hidden h-8 w-auto lg:block" 
-                            src="/terminal-icon.png" 
+                            src="/portfolio/terminal-icon.png" 
                             alt="Your Company" />
                     </div>
                     <div class="hidden sm:ml-6 sm:block">
@@ -111,7 +111,7 @@ export default {
         logout(){
             this.$store.commit('clear');
             this.$pb.authStore.clear();
-            this.$router.push({ path: '/login' });
+            this.$router.push({ path: '/portfolio/login' });
         }
     },
 }

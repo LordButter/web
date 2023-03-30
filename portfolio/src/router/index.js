@@ -4,12 +4,12 @@ import LoginView from '../views/LoginView.vue';
 
 const routes = [
     {
-        path: '/login',
+        path: '/portfolio/login',
         name: 'login',
         component: LoginView
     },
     {
-        path: '/',
+        path: '/portfolio',
         name: 'dashboard',
         component: DashboardView,
         meta: {
@@ -17,7 +17,7 @@ const routes = [
         }
     },
     {
-        path: '/resume',
+        path: '/portfolio/resume',
         name: 'resume',
         component: () => import('../views/ResumeView.vue'),
         meta: {
@@ -25,7 +25,7 @@ const routes = [
         }
     },
     {
-        path: '/application',
+        path: '/portfolio/application',
         name: 'application',
         component: () => import('../views/ApplicationView.vue'),
         meta: {
@@ -33,7 +33,7 @@ const routes = [
         }
     },
     {
-        path: '/skills',
+        path: '/portfolio/skills',
         name: 'skills',
         component: () => import('../views/SkillsView.vue'),
         meta: {
@@ -41,7 +41,7 @@ const routes = [
         }
     },
     {
-        path: '/projects',
+        path: '/portfolio/projects',
         name: 'projects',
         component: () => import('../views/ProjectsView.vue'),
         meta: {
@@ -49,7 +49,7 @@ const routes = [
         }
     },
     {
-        path: '/about',
+        path: '/portfolio/about',
         name: 'about',
         component: () => import('../views/AboutView.vue'),
         meta: {

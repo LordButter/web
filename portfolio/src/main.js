@@ -14,11 +14,11 @@ const app = createApp(App)
 app.$router.beforeEach((to) => {
     if (to.meta.requiresAuth && !app.$pb.authStore.isValid) {
         return {
-            path: "/login"
+            path: "/portfolio/login"
         };
     } else if(to.name == "login" && app.$pb.authStore.isValid){
         return {
-            path: "/"
+            path: "/portfolio"
         };
     }
 });

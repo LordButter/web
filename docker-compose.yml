@@ -1,0 +1,19 @@
+services:
+    reverseproxy:
+        image: proxy
+        ports:
+            - 8080:8080
+            - 8090:8090
+        restart: always
+ 
+    portfolio:
+        depends_on:
+            - reverseproxy
+        image: portfolio
+        restart: always
+ 
+    pocketbase:
+        depends_on:
+            - reverseproxy
+        image: pocketbase
+        restart: always
